@@ -23,62 +23,233 @@
 		      <br>jon.atherton@helsinki.fi
 		    </section>
                    <section>
-                     <h3>Learning outcomes</h3>
-		      <ul>
-			<li>Introduce the background and state-of-the-art in optical remote sensing of terrestrial productivity</li>
-			<li>Learn the basic mechanisms behing the observable signals</li>
-			<li>Hands-on demo of remote sensing using Google Earth Engine</li>
-		      </ul> 
+                     <h3> We will cover the following:</h3>
+		     <ol>
+		        <li> What is optical remote sensing of terrestrial productivity exactly?</li>
+			<li> Introduction to theory of remote sensing</li>
+			<li> Explanation of NDVI with interesting applications</li>
+			<li> Retrieval of productivity with NDVI </li>
+		      </ol> 
 		   </section>
-		 
 
+		   
 		   <section>
-		     <h6>What is terrestrial primary productivity? a matter of biological carbon exchange</h6>
-		     <div style="position:relative; width:640px; height:480px; margin:0 auto;">
-		       <img class="fragment fade-out" data-fragment-index="0" width="350" height="1000" src="./images/birch_tree.png" style="position:absolute;top:0;left:0;" />
-		       <img class="fragment fade-in" data-fragment-index="0" width="350" height="1000" src="./images/birch_tree_2.png" style="position:absolute;top:0;left:1;" />
-		     </div>
-
-		    <p style="font-size:2vw;" > Want to know more about carbon fluxes in Finland? take a look at Dr. Tana Suni's PhD <a href="https://helda.helsinki.fi/bitstream/handle/10138/23148/turbulen.pdf?sequence=2&isAllowed=y" >link</a> </p>
+		     <h4> What is terrestrial primary productivity? a matter of carbon exchange </h4>
+		     <img class="plain" src="./images/components-of-the-forest-carbon-cycle.jpg" width="500" height="450" />
+		     
+		    <p style="font-size:1vw;" > image based on: M. Campioli et al., Nature communications 7, no. 1 (2016): 1-12. CC BY 4.0, via Wikimedia Commons. Click <a href="https://www.nature.com/articles/ncomms13717"  >here</a> for paper. </p>
 		   </section>
 
 		   <section>
-		     <h3>Measuring productivity in the field</h3>
-
+		     <h3>Measuring productivity (CO2 exchange) in the field</h3>
 		     
 		     <img class="plain" src="./images/EC233_photo.jpg" />
-		     <p style="font-size:4vw;">photo credit: Dr Juho Aalto</p>
-		     Click <a href="https://www.nature.com/scitable/knowledge/library/terrestrial-primary-production-fuel-for-life-17567411/">here</a> for a nice intro to measurement of productivity.
+		     <p style="font-size:1vw;">photo credit: Juho Aalto. Click <a href="https://www.nature.com/scitable/knowledge/library/terrestrial-primary-production-fuel-for-life-17567411/">here</a> for a nice intro to measurement of productivity.</p>
+		     <p style="font-size:1vw;"> Click <a href="https://www.nature.com/scitable/knowledge/library/terrestrial-primary-production-fuel-for-life-17567411/">here</a> for a nice intro to measurement of productivity.</p>
 
 		   </section>
 
+		   
 		   <section>
-		     <h3>How to retrieve productivity across the landscape?</h3>
-		     <img class="plain" src="./images/modis.jpg" />
+		     <h4> How to RETRIEVE productivity across land surface? Enter optical remote sensing! </h4>
+		       <img class="plain" src="./images/modis.jpg" width="500" height="350" />
+		       <p style="font-size:1vw;" > A satellite is one type of remote sensing platform. Optical refers to visible, near infrared (NIR) and shortwave infrared (SWIR) wavelengths. </p>
+		   </section> 
+
+		   <section id="platform">
+		     <img class="plain" src="./images/scale_diagram.png" />
 		   </section> 
 		   
 		   
-		   <section>
-		     <h3>How does passive optical remote sensing work?</h3>
-		     <div style="position:relative; width:640px; height:480px; margin:0 auto;">
-		       <img class="fragment fade-out" data-fragment-index="0" width="700" height="350" src="./images/800px-EM_spectrumrevised.png" style="position:absolute;top:0;left:0;" />
-		       <img class="fragment fade-in" data-fragment-index="0" width="350" height="1000" src="./images/birch_tree_sun.png" style="position:absolute;top:0;left:0;" />
-		     </div>
-		  
-		       
-		     <p style="font-size:2vw;" > EM spectrum.svg by  Philip Ronan, Gringer CC-BY-SA-3.0 license.  From <a href="https://commons.wikimedia.org/wiki/File:EM_spectrumrevised.png" >click</a> </p>     
+		   <section id="rt">
+		     <h3> Theory part 1: radiative transfer</h3>
+		     <img class="plain" src="./images/birch_tree_sun_BRF_RT._slide1.png" width="500" height="600" />
+		     
 		   </section>
+
 		   <section>
-		     <h3>NDVI: See ATM lecture, PUT PIGMENTS IN HERE</h3>
+		     <h3> Theory part 2: reflectance</h3>
+		     <img class="plain" src="./images/birch_tree_sun_BRF_RT._slide2.png" width="500" height="600" />
+		     
+		   </section>
+
+		   <section>
+		     <h3> Theory part 3: Wavelength</h3>
+		     <img class="plain" src="./images/birch_tree_sun_BRF_RT._slide3.png" width="500" height="600" />
+		     
+		   </section>
+
+
+		   <section id="ndvi">
+		     <h3> Theory part 4: Spectra & Normalised Difference Vegetation Index (NDVI)</h3>
+
+		     <div style="position:relative; width:640px; height:480px; margin:0 auto;">
+		       <img class="fragment fade-out" data-fragment-index="0"  src="./images/Fig1_reflec_spec_3_adjustcal.png" style="position:absolute;top:0;left:0;" />
+
+		       <img class="fragment fade-in" data-fragment-index="0"  src="./images/chlSpec.png" style="position:absolute;top:0;left:0;" />
+		     </div>
+
 		   </section>
 		   
-		    <section>
-		      <h3>Poll: what possible applications of RS do we see?</h3>
-		      Answers here: link to password protected Flinga
-		    </section>
-		  </div>
-		</div>
+		   
+		   <section>
+		     <h3>RECAP: go through main points of last few slides</h3>
+		     <ul>
+		       <li>Scattering and absorption control radiative transfer </li>
+		       <li>Reflectance is ratio of reflected radiance to irradiance </li>
+		       <li>Reflectance is measured across the spectrum as function of
+			 wavelength</li>
+		       <li> NDVI quantifies difference between light absorption in visible
+			 Vs scattering in NIR </li>
+		     </ul>
+		   </section>
 
+
+		   <section>
+		   <section>
+		     <h3>Poll: Chlorophyll absorbs at the leaf scale. What else could affect our canopy observations? </h3>
+
+		     Flinga link in the chat. Answers below (press down only after poll!).
+		     
+		   </section>
+
+		   <section>
+		     <h3>Factors that influence remote observations</h3>
+		     <ul>
+		       <li>Solar-view geometry </li>
+		       <li>Leaf area </li>
+		       <li>Leaf angles </li>
+		       <li>non-photosynthetic reflectance of target (e.g. bark) </li>
+		       <li> ground properties, especially understory layer  </li>
+		       <li> snow </li>
+		       <li> atmospheric transmittance </li>
+		       <li> some of the above properties (leaf area, angles) combine to
+			 determine the canopy gap fraction </li>
+		     </ul>
+		   </section>
+		   </section>
+
+		   
+
+		   <section>
+		     <h3> NDVI application 1: proximal grass growth in Finland</h3>
+		     <div style="position:relative; width:640px; height:480px; margin:0 auto;">
+		       <img class="fragment fade-out" data-fragment-index="0"  src="./images/IMG_20201029_143945.jpg" style="position:absolute;top:0;left:0;" />
+		       <img class="fragment fade-in" data-fragment-index="0"  src="./images/decagon_ndvi.png" style="position:absolute;top:0;left:0;" width="1000" height="270" />
+		     </div>
+
+		     <p style="font-size:1vw;"> Click <a href="https://doi.org/10.31223/osf.io/eayph"  >here</a> for pre-print.</p>
+		     
+		     
+		     </section>
+
+		   <section>
+		     <h3> Optical application 2: global greening</h3>
+
+		     <a href="https://youtu.be/zOwHT8yS1XI">NASA</a> video on global greening.
+		     
+		       
+		     </section>
+
+		   <section  id="green">
+		   <h3> Is  Finland greening?</h3>
+		   <div style="position:relative; width:640px; height:480px; margin:0 auto;">
+		  
+		     <img class="fragment fade-out" data-fragment-index="0"  src="./images/Locations.png" style="position:absolute;top:0;left:0;" />
+		     <img class="fragment fade-in" data-fragment-index="0"  src="./images/SMEARgreeningUncert.png" style="position:absolute;top:0;left:0;" />
+		  
+		     </section>
+		   
+
+		   <section>
+		     <h3> Though NDVI responds to greening, it is not the best indicator of leaf area or biomass</h3>
+
+		     <img class="plain" data-fragment-index="0"  src="./images/NDVIsaturation.png"/>
+		   </section>
+
+		   <style>
+		     .container{
+		     display: flex;
+		     }
+		     .col{
+		     flex: 1;
+		     }
+		   </style>
+
+		   <section id="gpp">
+
+		     <h3> Can we use NDVI to predict GPP? Yes. </h3>
+		     
+		   <div class="container">
+
+		     <div class="col">
+
+		       <img class="plain" data-fragment-index="0"  src="./images/remotesensing-10-01346-g006-550.jpg"/>
+
+		       <p style="font-size:1vw;"> NDVI based estimation of GPP: CCBY> Joiner, J. et al. Remote Sens. 2018, 10, 1346. This uses a slighly different formulation of LUE model.
+		       Click <a href="https://www.mdpi.com/2072-4292/10/9/1346"  >here</a> for paper.</p>
+
+		       
+		     </div>
+
+		     
+		     <div class="col">
+
+		       
+		        GPP = LUE. fAPAR . PAR
+
+			<p style="font-size:1vw;">
+		       PAR = Photosynthetically active radiation,
+		       light that fuels photosyn.</p>
+
+			<p style="font-size:1vw;">
+			  LUE = light use efficiency, i.e. heath status of canopy. </p>
+
+			 <p style="font-size:1vw;">
+ 		      fAPAR = Fraction of PAR that canopy absorbs. Approx linear relationship
+		      with NDVI.  </p>
+			 
+			
+			
+		     </div>
+		     
+		   </div>
+		   
+		   </section>
+		   
+
+		   <section>
+		     <h3> What did we cover?  </h3>
+		     <ol>
+			 <li> What is remote sensing </a> of productivity?
+                        </br> techniques and <a href="#/platform">platforms</a>  to measure CO2 uptake across space  </li>
+			 
+                       <li> Based on what theory?
+                         </br> <a href="#/rt">Radiative transfer</a> theory </li>
+		       
+                      <li> What is the the NDVI?
+                      </br> <a href="#/ndvi">quantifies</a> difference in scattering in NIR
+		      and absorption in vis. </li>
+
+		      
+                     <li> What can it be used for?
+                         </br> Linked to <a href="#/green"> global greening </a>,
+			   and  <a href="#/gpp"> GPP  </a> </li> 
+		      </ol>	
+
+		   </section>
+
+               <section>
+		 <h3> Lab practical and next session  </h3>
+		 <ul>
+		   <li> LAB: Use Google Earth Engine to extract Sentinel NDVI for urban Helsinki
+		   <li> NEXT: Beyond the NDVI: more remote sensing methods for retrieval
+		     of vegetation productivity including Sun-induced Fluorescence, microwave
+		     remote sensing and  LIDAR.
+		 </ul>	
+	       </section>
+
+		
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
